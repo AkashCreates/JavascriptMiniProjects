@@ -1,11 +1,100 @@
+ 
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container holding the entire calculator */
 .container {
-    text-align: center;
-    height: 100%;
-    width: 50%;
-    padding: 2rem 0 2rem 0;
-    margin: 7rem 0 0 20rem;
-    border-radius: 50px;
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    box-shadow:  20px 20px 60px #d9d9d9, 
-                -20px -20px 60px #ffffff;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Heading section */
+.heading h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Input sections */
+.bill-amount,
+.service-container,
+.people {
+  margin-bottom: 20px;
+}
+
+.bill-amount p,
+.service-container p,
+.people p {
+  margin-bottom: 8px;
+  color: #34495e;
+  font-weight: 500;
+}
+
+/* Input fields */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 5px;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+/* Calculate Button */
+#calculate-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+#calculate-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Tip Display */
+#tip-container {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.4rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+#tip-container small {
+  font-size: 1rem;
+  color: #2c3e50;
 }
